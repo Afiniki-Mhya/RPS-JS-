@@ -4,27 +4,49 @@
 }
 
 body {
-  background-color: #0B0B0D;
-  /* font-family: "poppins";
-  font-weight: 400; */
-  font-weight: bolder;
+  background-image: url("retro.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  /* background-color:  #000; */
+  font-family: "Press Start 2P", cursive;
+  /* font-weight: bolder; */
+}
+
+.players {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 5rem;
+  padding-left: 2rem;
 }
 
 .hand-btns {
   color: #fff;
-  font-size: 8rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding-top: 15rem;
+  
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: #14ffec;
+  color: #fff;
+  box-shadow: 0.5em 0.5em 3rem #14ffec;
 }
 
 .hand-btns button {
   background-color: #14ffec;
-  font-style: "new tegomin";
+  font-family: "Press Start 2P", cursive;
   font-size: 1.2rem;
   padding: 20px 20px;
+  border-radius: 1rem;
 }
 
 .btns {
@@ -34,19 +56,23 @@ body {
   margin-bottom: 3rem;
 }
 
-.scoreboard{
-    color: #fff;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 22px;
-    padding: 2rem;
-}
-
-.players{
-  color: #fff;
+.score_labels{
   display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 5rem;
-
+  flex-direction: column;
+  text-align: right;
+  justify-content: right;
+  color: #fff;
+  padding-right: 7rem;
+  gap: 3rem;
+  font-size: 10px;
+}
+.scoreboard{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: right;
+  color: #fff;
+  padding-right: 7rem;
+  gap: 3rem;
+  font-size: 10px;
 }

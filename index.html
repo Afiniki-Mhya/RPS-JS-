@@ -7,16 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;1,300&family=New+Tegomin&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Archivo:ital,wght@0,100;0,200;0,300;0,400;1,300&family=New+Tegomin&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
 
@@ -24,23 +16,34 @@
     <script defer src="./app.js"></script>
   </head>
   <body>
-    <div class="hand-btns">
-      <button class="btn" id="ROCK">ROCK</button>
-      <div class="btns">
-        <button class="btn" id="PAPPER">PAPPER</button>
-        <button class="btn" id="SCISSORS">SCISSORS</button>
-      </div>
-    </div>
     <div class="players">
       <h2 id="computer">Computer's Choice</h2>
       <h2 id="player">Player's Choice</h2>
     </div>
-    <!-- <div class="scoreboard">
-      <div class="player-one">Player One</div>
-      <div class="player-two">Player Two</div>
-      <div class="first-initial">0</div>
-      <div class="second-initial">0</div>
-    </div> -->
+     <!-- creating a score board to show the scores of the player and computer -->
+     <div class="score_labels">
+      <h2 class="label">player's score:</h2>
+      <h2 class="label">Computer's score:</h2>
+    </div>
+    <div class="scoreboard">
+      <h2 id="p1">0</h2>
+      <h2 id="p2">0</h2>
+    </div>
+    <div class="hand-btns">
+      <button class="btn" id="ROCK">
+        <img src="rock.png" width="200rem">
+      </button>
+      <div class="btns">
+        <button class="btn" id="PAPER">
+          <img src="paper.png" width="200rem">
+        </button>
+        <button class="btn" id="SCISSORS">
+          <img src="scissors.png" width="200rem">
+        </button>
+      </div>
+    </div>
+
+   
     <!-- <button>Play Again</button>
     <button>Result</button> -->
   </body>

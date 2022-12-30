@@ -2,59 +2,66 @@ const computerChoiceDisplay = document.getElementById("computer");
 const playerChoiceDisplay = document.getElementById("player");
 const possibleChoices = document.querySelectorAll(".btn");
 console.log({ possibleChoices });
+p1Display = document.querySelector("#p1");
 let playerChoice;
 let computerChoice;
 let result;
 
+// let p1Score = 0;
+// let playerScore = 0;
+
 possibleChoices.forEach((possibleChoice) =>
   possibleChoice.addEventListener("click", (e) => {
     playerChoice = e.target.id;
-    playerChoiceDisplay.innerHTML = " Player's Choice:  " + playerChoice;
+    playerChoiceDisplay.innerHTML = "Player's Choice:  " + playerChoice;
     getComputerChoice();
+    getScore();
   })
 );
 
+const choices = ["PAPER", "SCISSORS", "ROCK"];
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
   console.table({ randomNumber });
-//this could also work for practice at biginners level
-  // if (randomNumber === 1) {
-  //   computerChoice = "paper";
-  // }
-
-  // if (randomNumber === 2) {
-  //   computerChoice = "scissors";
-  // }
-
-  // if (randomNumber === 3) {
-  //   computerChoice = "rock";
-  // }
   computerChoice = choices[randomNumber];
   computerChoiceDisplay.innerHTML = "Computer's Choice: " + computerChoice;
 }
 
-const choices = ["PAPER", "SCISSORS", "ROCK"];
-
-function getResult() {
-  if(computerChoice === playerChoice) {
-   result = "Draw";
+function getScore() {
+  if(computerChoice > playerChoice) {
+   result = "You Loose";
+   console.log(result)
   }
-  if(computerChoice === "rock" && playerChoice === "paper") {
+  if(computerChoice === playerChoice) {
+    result = "Draw";
+    console.log(result)
+   }
+   if(computerChoice < playerChoice) {
     result = "You Win";
+    console.log(result)
    }
-   if(computerChoice === "paper" && playerChoice === "scissors") {
-    result = "You Win";
-   }
-   if(computerChoice === "paper" && playerChoice === "rock") {
-    result = "You Lost";
-   }
-   if(computerChoice === "scissors" && playerChoice === "rock") {
-    result = "You Win";
-   }
-   if(computerChoice === "scissors" && playerChoice === "paper") {
-    result = "You Lost";
-   }
-   if(computerChoice === "rock" && playerChoice === "scissors") {
-    result = "You Lost";
-   }
-}
+  }
+
+
+
+
+  // if (computerChoice === "rock" && playerChoice === "paper") {
+  //   p1 = ++p1Score;
+    // p1.textContent = p1Score;
+ 
+  //  if(computerChoice === "paper" && playerChoice === "scissors") {
+  //   playerScore++;
+  //  }
+  //  if(computerChoice === "paper" && playerChoice === "rock") {
+  //    computerScore++;
+  //  }
+  //  if(computerChoice === "scissors" && playerChoice === "rock") {
+  //  playerScore++;
+  //  }
+  //  if(computerChoice === "scissors" && playerChoice === "paper") {
+  //   computerScore++;
+  //  }
+  //  if(computerChoice === "rock" && playerChoice === "scissors") {
+  //   computerScore++;
+  //  }
+
