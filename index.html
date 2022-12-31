@@ -14,36 +14,46 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script defer src="./app.js"></script>
+    <iframe
+      width="0"
+      height="0"
+      src="password-infinity.mp3"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
   </head>
   <body>
-    <div class="players">
-      <h2 id="computer">Computer's Choice</h2>
-      <h2 id="player">Player's Choice</h2>
-    </div>
-     <!-- creating a score board to show the scores of the player and computer -->
-     <div class="score_labels">
-      <h2 class="label">player's score:</h2>
-      <h2 class="label">Computer's score:</h2>
-    </div>
-    <div class="scoreboard">
-      <h2 id="p1">0</h2>
-      <h2 id="p2">0</h2>
+    <div class="gen">
+      <div class="players">
+        <h2 id="computer">Computer's Choice:</h2>
+        <h2 id="player">Player's Choice:</h2>
+      </div>
+      <!-- creating a score board to show the scores of the player and computer -->
+      <div class="scores">
+        <div class="score_labels">
+          <h2 class="label">player's score:</h2>
+          <h2 class="label">Computer's score:</h2>
+        </div>
+        <div class="scoreboard">
+          <h2 id="p1">0</h2>
+          <h2 id="p2">0</h2>
+        </div>
+      </div>
     </div>
     <div class="hand-btns">
       <button class="btn" id="ROCK">
-        <img src="rock.png" width="200rem">
+        <img id="ROCK" src="rock.png" width="200rem" />
       </button>
       <div class="btns">
         <button class="btn" id="PAPER">
-          <img src="paper.png" width="200rem">
+          <img id="PAPER" src="paper.png" width="200rem" />
         </button>
         <button class="btn" id="SCISSORS">
-          <img src="scissors.png" width="200rem">
+          <img id="SCISSORS" src="scissors.png" width="200rem" />
         </button>
       </div>
     </div>
 
-   
     <!-- <button>Play Again</button>
     <button>Result</button> -->
   </body>

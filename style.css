@@ -8,9 +8,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
-  /* background-color:  #000; */
   font-family: "Press Start 2P", cursive;
-  /* font-weight: bolder; */
+}
+.gen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 7rem;
+  padding-top: 5rem;
 }
 
 .players {
@@ -18,11 +23,25 @@ body {
   font-family: "Press Start 2P", cursive;
   color: #fff;
   display: flex;
+  text-align: left;
   flex-direction: column-reverse;
   justify-content: center;
   gap: 3rem;
-  padding-top: 5rem;
   padding-left: 2rem;
+}
+.scores {
+  display: flex;
+ 
+}
+.score_labels,
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #fff;
+  padding-right: 5rem;
+  gap: 3rem;
+  font-size: 10px;
 }
 
 .hand-btns {
@@ -31,7 +50,6 @@ body {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  
 }
 
 .btn:hover {
@@ -54,25 +72,4 @@ body {
   flex-direction: row;
   gap: 4rem;
   margin-bottom: 3rem;
-}
-
-.score_labels{
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  justify-content: right;
-  color: #fff;
-  padding-right: 7rem;
-  gap: 3rem;
-  font-size: 10px;
-}
-.scoreboard{
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  justify-content: right;
-  color: #fff;
-  padding-right: 7rem;
-  gap: 3rem;
-  font-size: 10px;
 }
